@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="945fff83-496a-4cec-bbe9-a074235d9e16">
+	<property name="ireport.zoom" value="1.4641000000000035"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="321"/>
+	<subDataset name="dataset1" uuid="0bb47934-a617-4936-844d-b38b38c395a9"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT*FROM mata_kuliah]]>
+	</queryString>
+	<field name="kodemk" class="java.lang.String"/>
+	<field name="sks" class="java.lang.Integer"/>
+	<field name="namamk" class="java.lang.String"/>
+	<field name="semesterajar" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="84" splitType="Stretch">
+			<staticText>
+				<reportElement x="106" y="10" width="379" height="36" uuid="9389d377-1534-4b35-a62c-899b80a91a82"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roboto Black" size="14"/>
+				</textElement>
+				<text><![CDATA[FAKULTAS SAINS DAN TEKNOLOGI
+UNIVERSITAS ISLAM NEGERI SUNAN AMPEL SURABAYA
+]]></text>
+			</staticText>
+			<image>
+				<reportElement x="31" y="10" width="63" height="58" uuid="04c1ccda-1a34-4949-b86e-1c2be4cdf99a"/>
+				<imageExpression><![CDATA["A:\\DATA\\DOWNLOAD\\CHROME\\PROFILE-1\\UIN Sunan Ampel Logo (PNG720p) - Vector69Com.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="31" y="83" width="508" height="1" uuid="287bfb5e-9f8f-430d-bc68-e19eceefc80d"/>
+			</line>
+			<staticText>
+				<reportElement x="106" y="46" width="379" height="37" uuid="c1d730d8-3116-4bfc-83f9-7e263b0d4f32"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jl. Dr. Ir. H. Soekarno No. 682,Gunung Anyar, Surabaya 60294
+Telp. 031-8410298 Fax. 031-8413300 E-mail:fst.uinsby@gmail.com]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="13" width="249" height="20" uuid="c00495f3-551d-49c4-bf42-905c4b10cadc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Roboto Black" size="16"/>
+				</textElement>
+				<text><![CDATA[LIST MATA KULIAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="33" width="204" height="20" uuid="ae276ece-65c2-44a4-9a66-939794a0d9fb"/>
+				<textElement verticalAlignment="Middle">
+					<font isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Program Studi Sistem Informasi 2024/2025]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="66" splitType="Stretch">
+			<staticText>
+				<reportElement x="57" y="46" width="161" height="20" uuid="9b6a3896-d803-425c-b9ec-7457abe6f459"/>
+				<box topPadding="2" leftPadding="5" bottomPadding="2" rightPadding="5">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Kode MK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="218" y="46" width="44" height="20" uuid="7b8288d3-b7d3-41f6-b0e0-6e2ef11e8404"/>
+				<box topPadding="2" leftPadding="5" bottomPadding="2" rightPadding="5">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[SKS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="46" width="192" height="20" uuid="e906317a-b66c-41e0-a21f-f42ccb0427dc"/>
+				<box topPadding="2" leftPadding="5" bottomPadding="2" rightPadding="5">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Nama MK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="454" y="46" width="81" height="20" uuid="3beee4cd-9509-40ad-be99-be2053ada79f"/>
+				<box topPadding="2" leftPadding="5" bottomPadding="2" rightPadding="5">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Semester Ajar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="46" width="27" height="20" uuid="a2c7c064-158e-420d-96a9-fb4f024e65b7"/>
+				<box topPadding="2" leftPadding="5" bottomPadding="2" rightPadding="5">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="11" width="504" height="30" uuid="18eeb229-e0ee-4c45-a090-c153a3b9f0bd"/>
+				<text><![CDATA[Berikut yang disampaikan dalam konteks ini merupakan kumpulan keseluruhan Mata Kuliah yang tersedia dalam Program Studi Strata-1 Sistem Informasi, dimulai dari semester pertama hingga semester kedelapan.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="57" y="0" width="161" height="20" uuid="61aaa5cd-75b5-499e-8095-89acf7747b9a"/>
+				<box topPadding="2" leftPadding="5" bottomPadding="2" rightPadding="5">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kodemk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="218" y="0" width="44" height="20" uuid="32a039d5-c15a-4e6b-880e-7e02833cfc81"/>
+				<box topPadding="2" leftPadding="5" bottomPadding="2" rightPadding="5">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sks}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="262" y="0" width="192" height="20" uuid="e25b35a7-5fd2-45aa-ae4c-7b2e0a7cfda8"/>
+				<box topPadding="2" leftPadding="5" bottomPadding="2" rightPadding="5">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{namamk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="454" y="0" width="81" height="20" uuid="607b026f-81b6-4440-bd2b-9dd9f542b0b4"/>
+				<box topPadding="2" leftPadding="5" bottomPadding="2" rightPadding="5">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{semesterajar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="0" width="27" height="20" uuid="9662cae2-fbf6-4d86-bfb9-2c87030c62c3"/>
+				<box topPadding="2" leftPadding="5" bottomPadding="2" rightPadding="5">
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="121" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="103" width="504" height="18" uuid="d21c9643-37fc-4cb2-a570-81cbc1202363"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Informasi Tambahan : List Mata Kuliah dapat berubah saat pergantian kurikulum yang ada]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField pattern="EEE, d MMM yyyy HH:mm:ss Z">
+				<reportElement x="30" y="34" width="203" height="20" uuid="8a2a90c5-ad4d-45a2-8d03-7d73a79f381c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="419" y="34" width="80" height="20" uuid="ec162e6b-862d-4d9f-b5c6-be02003bf2cf"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="499" y="34" width="40" height="20" uuid="2542cc16-848c-4f5b-9f9e-754c0c384544"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
